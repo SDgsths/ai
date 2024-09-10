@@ -3,6 +3,7 @@ from flask_socketio import SocketIO, emit, join_room, leave_room
 import random
 
 app = Flask(__name__)
+
 app.secret_key = 'secret_key_for_sessions'
 socketio = SocketIO(app)
 
