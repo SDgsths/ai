@@ -50,4 +50,5 @@ def on_leave(data):
     emit('receive_message', {'msg': f'{username} has left the room.'}, room=room)
 
 if __name__ == "__main__":
+    app.run("0.0.0.0", 80, debug=True)
     socketio.run(app, debug=True)
